@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择实验项目"
+         />
+    <Button
+        android:id="@+id/btn_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询历史数据"
+        />
+    <Button
+        android:id="@+id/btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实验背景介绍"
+        />
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于"/>
+
+</LinearLayout>

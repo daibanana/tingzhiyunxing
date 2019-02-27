@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="反应时实验"/>
+    <Button
+        android:id="@+id/btn_threshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="阈值实验"/>
+    <Button
+        android:id="@+id/btn_memory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="记忆实验"/>
+
+</LinearLayout>
