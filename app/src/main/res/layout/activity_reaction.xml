@@ -5,16 +5,24 @@
     android:theme="@android:style/Theme.NoTitleBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".com.reactiontime.ReactionActivity">
+    tools:context=".com.reactiontime.ReactionActivity"
+    android:orientation="vertical">
     <Button
         android:id="@+id/btn_simple"
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="简单反应时"/>
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_choose"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="reaction time experiment "/>
-
+        android:text="选择反应时"/>
+    <Button
+        android:id="@+id/btn_distinguish"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="辨别反应时"/>
 </LinearLayout>
