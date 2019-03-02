@@ -4,30 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SimpleActivity"
+    tools:context=".ChooseActicity"
     android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择反应时"/>
     <Button
-        android:id="@+id/set"
+        android:id="@+id/set_choose_para"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="设置参数"/>
     <Button
-        android:id="@+id/experiment"
+        android:id="@+id/play_choose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="进行实验"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="实验参数："
-            android:textSize="20sp"/>
-        <TextView
-            android:id="@+id/para"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="实验参数"
-            android:textSize="20sp"/>
-
 
 </LinearLayout>

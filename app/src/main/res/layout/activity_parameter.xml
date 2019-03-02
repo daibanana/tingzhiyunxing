@@ -44,30 +44,6 @@
                 android:textSize="20sp"/>
         </RadioGroup>
     </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="年龄"
-            android:textSize="20sp"
-            />
-        <RadioGroup
-            android:id="@+id/age"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="18"
-                android:textSize="20sp"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="19"
-                android:textSize="20sp"/>
-        </RadioGroup>
-    </TableRow>
     <TableRow
         android:orientation="horizontal">
         <TextView
@@ -93,6 +69,21 @@
                 android:textSize="20sp"/>
         </RadioGroup>
     </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入年龄"
+            android:textSize="20sp"/>
+    </TableRow>
+
     <TableRow
         android:orientation="horizontal">
         <TextView
@@ -101,20 +92,12 @@
             android:text="实验组数"
             android:textSize="20sp"
             />
-        <RadioGroup
+        <EditText
             android:id="@+id/number"
-            android:orientation="horizontal">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10"
-                android:textSize="20sp"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="20"
-                android:textSize="20sp"/>
-        </RadioGroup>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入被试姓名"
+            android:textSize="20sp"/>
 
     </TableRow>
     <Button
