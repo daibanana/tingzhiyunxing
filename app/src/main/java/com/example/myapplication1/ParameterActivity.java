@@ -1,47 +1,58 @@
 package com.example.myapplication1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class ParameterActivity extends AppCompatActivity {
-    int resultCode;
-    private EditText name;
-    private Button btn_ok;
-    private RadioGroup age;
-
-    private RadioGroup sex;
-    private RadioButton male;
-    private RadioButton female;
-
-    private RadioGroup hand;
-    private RadioButton left;
-    private RadioButton right;
-
-    private RadioGroup number;
-    //缺少下拉选择年龄及组数的选项
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parameter);
-        name = findViewById(R.id.name);
-        btn_ok = findViewById(R.id.btn_ok);
-        age = findViewById(R.id.age);
-        sex = findViewById(R.id.sex);
-        hand = findViewById(R.id.hand);
-        male = findViewById(R.id.male);
-        female = findViewById(R.id.female);
-        left = findViewById(R.id.left);
-        right = findViewById(R.id.right);
-        btn_ok = findViewById(R.id.btn_ok);
+        Button okBtn = findViewById(R.id.btn_ok);
+
+        //单击OK按钮，获取各个组件的输入值
+        okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                //获取各个组件内容
+                String name = ((EditText)findViewById(R.id.name)).getText().toString();
+                String age = ((EditText)findViewById(R.id.age)).getText().toString();
+                String no = ((EditText)findViewById(R.id.no)).getText().toString();
+                String number = ((EditText)findViewById(R.id.number)).getText().toString();
+                //Integer number = ((Integer)findViewById(R.id.no)).getText().toInt();
+
+                //判断是否有未输入的信息
+                if (!"".equals(name) && !"".equals(age)){
+                    Intent intent = getIntent();
+                    Bundle bundle = new Bundle();
+                    bundle.putCharSequence("name",name);
+                    bundle.putCharSequence("age",age);
+                    bundle.putCharSequence("no",no);
+                    bundle.putCharSequence("number",number);
+                    intent.putExtras(bundle);
+                    setResult(0x11,intent);
+                    finish();
 
 
 
-        setResult(resultCode);
+                }else{
+                    Toast.makeText(ParameterActivity.this," 请输入完整信息",Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
     }
-}
+
+    }
+
+

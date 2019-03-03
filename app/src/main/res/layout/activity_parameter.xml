@@ -23,6 +23,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="编号"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入实验编号"
+            android:textSize="20sp"
+            android:inputType="number"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="性别"
             android:textSize="20sp"/>
         <RadioGroup
@@ -75,13 +91,16 @@
             android:layout_height="wrap_content"
             android:text="年龄"
             android:textSize="20sp"
+
             />
         <EditText
             android:id="@+id/age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="请输入年龄"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:inputType="number"
+            />
     </TableRow>
 
     <TableRow
@@ -96,8 +115,10 @@
             android:id="@+id/number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="请输入被试姓名"
-            android:textSize="20sp"/>
+            android:hint="要进行多少组实验？"
+            android:textSize="20sp"
+            android:inputType="number"
+            />
 
     </TableRow>
     <Button
